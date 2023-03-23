@@ -1,7 +1,10 @@
-﻿namespace OnlineLearningPlatform
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace OnlineLearningPlatform
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
             var userList = new List<User>();
@@ -71,7 +74,10 @@
 
                                 courseList.Add(newCourse);
 
-                                Console.WriteLine("New course added!\n");
+                                Message m1 = new Message();
+
+                                m1.GenerateRespectiveMsg();
+
                             }
                             else if(adminChoice == 3)
                             {
