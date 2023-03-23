@@ -10,13 +10,6 @@ namespace OnlineLearningPlatform
     {
         private string userId = "", userName = "", password = "", email = "";
 
-        /*User(string userId, string userName, string password, string email) { 
-            this.userId = userId;
-            this.userName = userName;
-            this.password = password;
-            this.email = email;     
-        }*/
-
         public void setuserId(string userId) { this.userId = userId; }
         public string getuserId() {  return userId; }
 
