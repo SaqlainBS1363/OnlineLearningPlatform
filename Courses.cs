@@ -19,14 +19,16 @@ namespace OnlineLearningPlatform
             this.coursePrice = coursePrice;
         }*/
 
-        public void setcourseID(string courseID) { this.courseId = courseID; }
-        public string getcourseID(string courseID) { return courseID; }
+        public void setcourseID(string courseId) { this.courseId = courseId; }
+        public string getcourseID() { return courseId; }
 
         public void setcourseName(string courseName) { this.courseName = courseName; }
         public string getcourseName() { return courseName; }
 
+        public void setcourseTopic(string courseTopic) { this.courseTopic = courseTopic; }
+        public string getcourseTopic() { return courseTopic; }
 
-
-
+        public void setcoursePrice(int coursePrice) { this.coursePrice = coursePrice; }
+        public int getcoursePrice() {  return coursePrice; }
     }
 }

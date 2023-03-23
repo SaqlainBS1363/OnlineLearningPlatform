@@ -10,16 +10,23 @@ namespace OnlineLearningPlatform
     {
         private string userId = "", userName = "", password = "", email = "";
 
-        User(string userId, string userName, string password, string email) { 
+        /*User(string userId, string userName, string password, string email) { 
             this.userId = userId;
             this.userName = userName;
             this.password = password;
             this.email = email;     
-        }
+        }*/
 
-        public string UserId { get { return userId; } }         
-        public string UserName { get { return userName; } }
-        public string Password { get { return password; } }
-        public string Email { get { return email; } }
+        public void setuserId(string userId) { this.userId = userId; }
+        public string getuserId() {  return userId; }
+
+        public void setuserName(string  userName) { this.userName = userName; }
+        public string getuserName() { return userName; }
+
+        public void setpassword(string password) {  this.password = password; }
+        public string getpassword() { return password; }    
+
+        public void setemail(string email) { this.email = email; }
+        public string getemail() { return email; } 
     }
 }
